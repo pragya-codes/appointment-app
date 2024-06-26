@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="newAppointment">
+<input type="date" [(ngModel)]="newDate">
+<button (click)="handleAdd()">Add</button>
+<ul>
+  <li *ngFor = "let i of appointments">{{i.title}} -- {{i.date}}</li>
+  </ul>
